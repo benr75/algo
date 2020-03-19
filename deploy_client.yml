@@ -3,7 +3,7 @@
   hosts: localhost
   become: false
   vars_files:
-    - config.cfg
+    - "{{ custom_config_file }}"
 
   tasks:
     - name: Add the droplet to an inventory group

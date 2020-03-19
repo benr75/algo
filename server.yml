@@ -4,7 +4,7 @@
   gather_facts: false
   become: true
   vars_files:
-    - config.cfg
+    - "{{ custom_config_file }}"
   tasks:
     - block:
       - name: Wait until the cloud-init completed
